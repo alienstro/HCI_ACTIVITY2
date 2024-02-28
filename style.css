@@ -1,0 +1,56 @@
+body {
+    margin: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav li:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.nav li:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+} 
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    position: relative;
+    padding: 0.8rem;
+    width: 8rem;
+    background-color: #35374B;
+    border-top: 1px solid grey;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul ul {
+    transition: ease 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 105%;
+    top: -2%;
+}
+
+.nav ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav ul li:hover {
+    background-color: #40679E;
+}
+
+.arrow {
+    margin-left: 2rem;
+    color: white;
+}
